@@ -4,23 +4,113 @@
 /* Code navigation */
 
 /* -------------------------------------------------------------------- */
-
+    /* 1. Header */
+    /* 2. Main */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
 
-$maxWidth: ( x );
+$maxWidth: ( 2560 );
 
 /* START */
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+    font-family: "Great Vibes", cursive;
+    color: #fff;
+    background-color: rgb(159, 19, 19);
 }
 
 .container {
-    max-width: 1175px;
+    max-width: 2560px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/*  */
+.christmas-toys {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    z-index: -1;
+    width: 300px;
+    height: 200px;
+}
+
+.christmas-garland {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+
+.colon {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+
+/* 1. Header */
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        margin: 15px;
+        font-size: 72px;
+    }
+
+    &__subtitle {
+        margin: 15px;
+        font-size: 30px;
+    }
+}
+
+/* 2. Main */
+
+.main {
+    display: flex;
+    justify-content: center;
+
+    &__title {
+        font-size: 35px;
+        text-align: center;
+
+        &_margin_top {
+            margin-top: 250px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_margin_top {
+            margin-top: 30px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        text-align: end;
+
+        &_margin_top {
+            margin-top: 60px;
+        }
+    }
+
+    .date-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 160px;
+        margin: 0 20px;
+        font-size: 70px;
+        color: #000;
+        background-color: #ffffffd4;
+        border-radius: 5px;
+    }
+}

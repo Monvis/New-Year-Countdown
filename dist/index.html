@@ -3,12 +3,53 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>New Year Calendar</title>
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+	<div class="app">
+		<div class="container">
+			<header class="header">
+				<img class="christmas-toys" src="img/christmas-toys.png" alt="christmas toys">
+				<img class="christmas-garland" src="img/christmas-garland.png" alt="christmas garland">
+
+				<h1 class="title header__title">Новогодний календарь</h1>
+				<p  class="header__subtitle">Узнай, сколько осталось до нового года!</p>
+			</header>
+
+			<main class="main">
+				<div class="wrapper main__wrapper">
+					<div class="main__title main__title_margin_top">
+						<h2>До нового года осталось:</h2>
+					</div>
 	
+					<div class="main__content main__content_margin_top">
+						<div class="date-card">
+							<h3 class="main__day">0</h3>
+						</div>
+						<div class="date-card">
+							<h3 class="main__hours">0</h3>
+						</div>
+						
+						<div class="colon">:</div>
+
+						<div class="date-card">
+							<h3 class="main__minutes">0</h3>
+						</div>
+						<div class="date-card">
+							<h3 class="main__seconds">0</h3>
+						</div>
+					</div>
+	
+					<div class="main__subtitle main__subtitle_margin_top">
+						<p>1 января 2025 года, Среда</p>
+					</div>
+				</div>
+			</main>
+		</div> <!-- //container -->
+	</div> <!-- //app -->
 	<script src="source/js/script.min.js"></script>
 </body>
 </html>

@@ -92,6 +92,10 @@ h6 {
 
 /* -------------------------------------------------------------------- */
 
+/* 1. Header */
+
+/* 2. Main */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -99,13 +103,126 @@ h6 {
 /* START */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  font-family: "Great Vibes", cursive;
+  color: #fff;
+  background-color: #9f1313;
 }
 
 .container {
-  max-width: 1175px;
+  max-width: 2560px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/*  */
+.christmas-toys {
+  position: absolute;
+  top: 0;
+  left: -20px;
+  z-index: -1;
+  width: 300px;
+  height: 200px;
+}
+
+.christmas-garland {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: -1;
+}
+
+.colon {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+}
+
+/* 1. Header */
+
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  margin: 15px;
+  font-size: 72px;
+}
+
+.header__subtitle {
+  margin: 15px;
+  font-size: 30px;
+}
+
+/* 2. Main */
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__title {
+  font-size: 35px;
+  text-align: center;
+}
+
+.main__title_margin_top {
+  margin-top: 250px;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__content_margin_top {
+  margin-top: 30px;
+}
+
+.main__subtitle {
+  font-size: 30px;
+  text-align: end;
+}
+
+.main__subtitle_margin_top {
+  margin-top: 60px;
+}
+
+.main .date-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 160px;
+  margin: 0 20px;
+  font-size: 70px;
+  color: #000;
+  background-color: #ffffffd4;
+  border-radius: 5px;
+}
