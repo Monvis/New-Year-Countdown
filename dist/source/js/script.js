@@ -1,3 +1,40 @@
+
+// Christmas calendar
+
+const dayCell             = document.getElementById('day')
+const hoursCell           = document.getElementById('hours')
+const minutesCell         = document.getElementById('minutes')
+const secondsCell         = document.getElementById('seconds')
+
+const colon               = document.querySelector('.colon')
+
+function updateCountdown() {
+
+    let CurrentTime       = new Date()
+    let NewYear           = new Date(2025, 0, 1)
+    let TimeDifference    = NewYear - CurrentTime
+
+    let days              = Math.floor(TimeDifference / (1000 * 60 * 60 * 24))
+    let hours             = Math.floor((TimeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    let minutes           = Math.floor(TimeDifference % (1000 * 60 * 60) / (1000 * 60))
+    let seconds           = Math.floor(TimeDifference % (1000 * 60) / 1000)
+
+    dayCell.innerHTML     = days
+    hoursCell.innerHTML   = hours
+    minutesCell.innerHTML = minutes
+    secondsCell.innerHTML = seconds
+
+    colon.style.opacity   = 1
+}
+
+updateCountdown()
+
+setInterval(() => colon.style.opacity = 0, 500)
+setInterval(updateCountdown, 1000)
+
+
+// Snowstorm nimation
+
 const UPPER_LIMIT_Y = 20
 const UPPER_LIMIT_X = 2
 const LOWER_LIMIT_X = -2

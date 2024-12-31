@@ -221,6 +221,7 @@ canvas {
 }
 
 .main .date-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,4 +238,10 @@ canvas {
   color: #000;
   background-color: #ffffffd4;
   border-radius: 5px;
+}
+
+.main .date-card p {
+  position: absolute;
+  font-size: 35px;
+  bottom: 0;
 }

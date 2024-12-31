@@ -116,6 +116,7 @@ canvas {
     }
 
     .date-card {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -126,5 +127,11 @@ canvas {
         color: #000;
         background-color: #ffffffd4;
         border-radius: 5px;
+
+        p {
+            position: absolute;
+            font-size: 35px;
+            bottom: 0;
+        }
     }
 }
